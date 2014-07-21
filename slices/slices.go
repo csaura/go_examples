@@ -53,12 +53,12 @@ func main() {
      // The length of the inner slices can vary, unlike with multi-dimensional arrays
      twoD := make([][]int, 3)
      for i := 0; i < 3; i++ {
-     	 innerLen := i + 1
-	 fmt.Println("innerLen ",innerLen)
-	 twoD[i] = make([]int, innerLen)
-	 for j := 0 ; j < innerLen; j++ {
-	     twoD[i][j] = i + j
-	 }
+       innerLen := i + 1
+       fmt.Println("innerLen ",innerLen)
+       twoD[i] = make([]int, innerLen)
+       for j := 0 ; j < innerLen; j++ {
+         twoD[i][j] = i + j
+       }
      }
 
      fmt.Println("2d: ", twoD)
